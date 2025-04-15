@@ -40,6 +40,5 @@ for match in matches:
 driver.quit()
 
 # Bonus: Create Dataframe in Pandas and export to CSV (Excel)
-df = pd.DataFrame({'goals': all_matches})
-print(df)
-df.to_csv('tutorial.csv', index=False)
+df = pd.DataFrame({'date':date, 'home_team':home_team, 'score':score, 'away_team':away_team})
+df.to_csv('Football_data.csv', index=False)
